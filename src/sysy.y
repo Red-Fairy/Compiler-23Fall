@@ -84,7 +84,7 @@ FuncDef
 FuncType
   : INT {
     auto func_type = new FuncTypeAST();
-    func_type->ret_type = make_unique<string>("int");
+    func_type->ret_type = make_unique<string>("i32");
     $$ = func_type;
   }
   ;
